@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="media">
+        <header>
+            <h2 class="heading">CITY</h2>
+            <div class="logo"></div>
+            <ul class="menu-1">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#"><span>About</span></a></li>
+                <li><a href="#"><span>Contact</span> </a></li>
+                <li><a href="#"><span>Destination</span></a></li>
+            </ul>
+        </header>
+        <img src="city.gif" id="image">
+        <div class="text">
+            <h2>Tokyo</h2>
+            <h3>Where life never sleeps</h3>
+            <a href="#" class="btn"><span>Explore</span></a>
+        </div>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Destination</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuBar = document.querySelector('.logo');
+        const menu = document.querySelector('.media');
+
+        menuBar.addEventListener('click',function(){
+            menuBar.classList.toggle('active');
+            menu.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
